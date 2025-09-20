@@ -85,30 +85,104 @@ const listItems = [
 
 const ServicesAndInfo = () => {
   return (
-    <section className="bg-white border-t-4 py-5">
-      <div className="max-w-4xl mx-auto px-4">
-        <h2 className="text-[1.85rem] font-bold mb-6 pl-4">Services and information</h2>
-        <ul className="divide-y divide-gray-200">
-          {listItems.map(({ href, title, description }) => (
-           <li key={title} className="py-4 pl-8 flex flex-col">
-  <div className="flex items-center justify-between">
-    <h3 className="text-[20px] font-bold mb-1">
-      <a
-        href={href}
-        className="group text-[#1D7088] font-bold underline hover:underline text-[1.25rem] leading-snug"
-      >
-        {title}
-      </a>
-    </h3>
-    <span className="text-[#1D7088] font-bold" style={{ fontSize: "1.8rem" }}>
-      ›
-    </span>
-  </div>
-  <p className="text-gray-700 text-[1.2rem]">{description}</p>
-</li>
-          ))}
-        </ul>
+    <section className="w-full">
+      {/* Top blue border */}
+      <div className="border-t-4 border-[#1d70b8] w-full" />
+      <div className="flex flex-col md:flex-row w-full">
+        {/* Left: Services and information */}
+        <div className="w-full md:w-2/3 px-4 pt-4 pb-8">
+          <h2 className="text-[2.15rem] font-bold mb-6 mt-2 leading-tight">Services and information</h2>
+          <ul className="divide-y divide-gray-200">
+            {listItems.map(({ href, title, description }) => (
+              <li key={title} className="flex flex-col py-6">
+                <div className="flex items-center justify-between">
+                  <a
+                    href={href}
+                    className="text-[#1d70b8] text-[1.20rem] font-semibold underline hover:text-[#003078] hover:underline"
+                  >
+                    {title}
+                  </a>
+                  <span
+                    className="text-[#1d70b8] text-[2rem] font-bold ml-2"
+                    aria-hidden="true"
+                  >
+                    &rsaquo;
+                  </span>
+                </div>
+                <p className="text-[1.15rem] text-gray-700 mt-1.5">{description}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Right: Featured */}
+        <div className="w-full md:w-1/2 px-4 pt-4 pb-8">
+          <h2 className="text-[2.15rem] font-bold mb-6 mt-2 leading-tight">Featured</h2>
+          <div className="space-y-12">
+            {/* Featured Item 1 */}
+            <div className="flex items-start">
+              <img
+                src="https://www.gov.uk/assets/frontend/homepage/find-a-job-4d38717b0451da3bb223ddea7f681d79e48c1c022da5a08f16aba3f681503150.png"
+                alt="Find a job"
+                className="w-20 h-20 object-contain mr-4"
+              />
+              <div>
+                <a
+                  href="/find-a-job"
+                  className="text-[#4c2c92] font-bold underline hover:underline text-[1.20rem] leading-snug"
+                >
+                  Find a job
+                </a>
+                <p className="text-gray-700 text-[1.15rem] mt-1">
+                  Search and apply for jobs in England, Scotland and Wales.
+                </p>
+              </div>
+            </div>
+
+            {/* Featured Item 2 */}
+            <div className="flex items-start">
+              <img
+                src="https://www.gov.uk/assets/frontend/homepage/national-insurance-featured-7169e3631b639dcfc7be22469daf155ad0aa7516143ff8cf2e6f95ba29c8656c.png"
+                alt="National Insurance"
+                className="w-20 h-20 object-contain mr-4"
+              />
+              <div>
+                <a
+                  href="/check-national-insurance-record"
+                  className="text-[#1D7088] font-bold underline hover:underline text-[1.20rem] leading-snug"
+                >
+                  National Insurance
+                </a>
+                <p className="text-gray-700 text-[1.15rem] mt-1">
+                  Check your record to see if you can add more contributions.
+                </p>
+              </div>
+            </div>
+
+            {/* Featured Item 3 */}
+            <div className="flex items-start">
+              <img
+                src="https://www.gov.uk/assets/frontend/homepage/cost-of-living-featured-4cd41cec449e0bd47e707812a5c3b5c52726bed0acb4f31c9b66548cc6ff6309.png"
+                alt="Cost of living support"
+                className="w-20 h-20 object-contain mr-4"
+              />
+              <div>
+                <a
+                  href="/cost-of-living-support"
+                  className="text-[#1D7088] font-bold underline hover:underline text-[1.20rem] leading-snug"
+                >
+                  Cost of living support
+                </a>
+                <p className="text-gray-700 text-[1.15rem] mt-1">
+                  Find out what support is available to help with the cost of living.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      {/* Bottom blue border */}
+      <div className="border-t-2 border-[#1d70b8] w-full mt-6" />
     </section>
   );
 };

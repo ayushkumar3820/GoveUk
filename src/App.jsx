@@ -1,13 +1,14 @@
-import React from 'react';
-import CookieBanner from './components/CookieBanner';
-import Header from './components/Header';
-import PopularLinks from './components/PopularLinks';
-import ServicesAndInfo from './components/ServicesAndInfo';
-import Featured from './components/Featured';
-import GovernmentActivity from './components/GovernmentActivity';
+import React from "react";
+import CookieBanner from "./components/CookieBanner";
+import Header from "./components/Header";
+import PopularLinks from "./components/PopularLinks";
+import ServicesAndInfo from "./components/ServicesAndInfo";
+import Featured from "./components/Featured";
+import GovernmentActivity from "./components/GovernmentActivity";
 // import MoreOnGovuk from './components/MoreOnGovuk';
-import Feedback from './components/Feedback';
-import Footer from './components/Footer';
+import Feedback from "./components/Feedback";
+import Footer from "./components/Footer";
+import AllserviceAndInfo from "./components/AllserviceAndInfo";
 
 function App() {
   return (
@@ -17,40 +18,27 @@ function App() {
 
       {/* Hero Section */}
       <main id="content" className="flex-grow bg-white">
-       
         {/* Popular Links */}
         <PopularLinks />
 
         {/* Services & Featured */}
-        <div className="border-t-4 border-[#1d70b8] mt-8">
-          <div className="max-w-7xl mx-auto pl-[110px] pr-2 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="md:col-span-2">
-              <ServicesAndInfo />
-            </div>
-            <div>
-              <Featured />
-            </div>
-          </div>
-        </div>
 
-        {/* Government Activity & More on GOV.UK */}
-        <div className="border-t-4 border-[#1d70b8] mt-8">
-          <div className="">
-            <div className="md:col-span-2">
-              <GovernmentActivity />
-            </div>
-            <div>
-              {/* <MoreOnGovuk /> */}
-            </div>
+        <div className="max-w-7xl mx-auto pl-[160px] pr-[-20px]">
+          <div className="md:col-span-3">
+            <ServicesAndInfo />
+            <GovernmentActivity />
+            <Feedback />
           </div>
         </div>
       </main>
-
-      <Feedback />
-         <div className="border-t-4 border-[#1d70b8] mt-8">
-
-      <Footer />
-         </div>
+      <div className="border-t-8 border-[#1d70b8] mt-0">
+        <div className="max-w-7xl mx-auto pl-[70px] pr-[-20px]">
+          <div className="md:col-span-3">
+            <AllserviceAndInfo />
+            <Footer />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
