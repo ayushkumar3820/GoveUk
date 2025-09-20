@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles to match GOV.UK */
+body {
+  @apply bg-white text-govuk-dark-grey font-sans;
+}
+
+.govuk-button {
+  @apply bg-govuk-green text-white px-4 py-2 rounded hover:bg-opacity-90;
+}
+
+.govuk-link {
+  @apply text-govuk-blue underline;
+}
+
+.govuk-heading-l {
+  @apply text-4xl font-bold;
+}
+
+.govuk-heading-m {
+  @apply text-2xl font-bold;
+}
+
+.govuk-heading-s {
+  @apply text-xl font-bold;
+}
+
+.govuk-visually-hidden {
+  @apply sr-only;
+}
+
+.max-w-4xl {
+  max-width: 70rem;
+}
+
+.maxWidth  {
+    max-width: 64rem;
+}
+
+.gov-section {
+    padding: 35px 59px 0px 62px;
+    border-top: 3px solid #005ea5;
+    background: #fff;
+}
+
+.gov-container {
+  display: flex;
+  gap: 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gov-left, .gov-right {
+  flex: 1;
+}
+
+.gov-heading-l {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.gov-subheading {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.gov-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gov-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.gov-link {
+  color: #1D7088;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.gov-link:hover {
+  text-decoration: underline;
+}
+
+.gov-desc {
+  margin: 4px 0 0 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #6f777b;
+}
+
+.gov-arrow {
+  font-size: 29px;
+  color: #1D7088;
+}
+
+.gov-right-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gov-right-list li {
+  padding: 6px 0;
+}
+
+.gov-right-list li a {
+  color: #1D7088;
+  text-decoration: underline;
+  
+}
+.gov-right-list li a:hover{
+  text-decoration: underline;
+text-decoration: black;
+
+}
+
+.gov-right-list li a:hover {
+  text-decoration: underline;
+}
+
+.footer{
+      max-width: 80rem;
+}
