@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
 const PopularLinks = () => {
@@ -10,6 +10,14 @@ const PopularLinks = () => {
     { href: "/sign-in-childcare-account", text: "Childcare account: sign in" },
     { href: "/check-state-pension", text: "Check your State Pension forecast" },
   ];
+
+  const [activeIndices, setActiveIndices] = useState([]);
+
+  const handleClick = (index) => {
+    setActiveIndices((prev) =>
+      prev.includes(index) ? prev : [...prev, index]
+    );
+  };
 
   return (
     <section className="py-8  px-4 sm:px-6 lg:px-24 lg:pl-[250px]">
@@ -29,7 +37,13 @@ const PopularLinks = () => {
               </span>
               <a
                 href={link.href}
-                className="text-[#1d70b8] font-bold underline hover:text-[#004488] text-base sm:text-lg md:text-xl"
+                className={`text-[#1d70b8] font-bold underline hover:text-[#004488] text-base sm:text-lg md:text-xl ${
+                  activeIndices.includes(index) ? "text-[#3d2375]" : ""
+                }`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleClick(index);
+                }}
               >
                 {link.text}
               </a>

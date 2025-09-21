@@ -33,19 +33,19 @@ const CookieBanner = () => {
         <div className="flex flex-wrap items-center gap-3">
           <button
             onClick={() => setIsVisible(false)}
-            className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 font-medium text-[20px]"
+            className="bg-[#005A30] hover:bg-[#005A30] text-white px-2 py-1 font-medium text-[20px]"
           >
             Accept additional cookies
           </button>
           <button
             onClick={() => setIsVisible(false)}
-            className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 font-medium text-[20px]"
+            className="bg-[#005A30] hover:bg-[#005A30] text-white px-2 py-1 font-medium text-[20px]"
           >
             Reject additional cookies
           </button>
           <a
             href="/help/cookies"
-            className="text-blue-700 underline text-[20px] hover:text-[#003078] hover:underline"
+            className="text-[#1D70B8] underline text-[20px] hover:text-[#003078] hover:underline"
           >
             View cookies
           </a>
