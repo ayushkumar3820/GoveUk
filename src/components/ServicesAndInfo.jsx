@@ -129,7 +129,7 @@ const ServicesAndInfo = () => {
               <div>
                 <a
                   href="/find-a-job"
-                  className="text-[#4c2c92] font-bold underline hover:underline text-[1.20rem] leading-snug"
+                  className="text-[#1d70b8] font-bold underline hover:underline text-[1.20rem] leading-snug"
                 >
                   Find a job
                 </a>
@@ -149,7 +149,7 @@ const ServicesAndInfo = () => {
               <div>
                 <a
                   href="/check-national-insurance-record"
-                  className="text-[#1D7088] font-bold underline hover:underline text-[1.20rem] leading-snug"
+                  className="text-[#1d70b8] font-bold underline hover:underline text-[1.20rem] leading-snug"
                 >
                   National Insurance
                 </a>
@@ -169,7 +169,7 @@ const ServicesAndInfo = () => {
               <div>
                 <a
                   href="/cost-of-living-support"
-                  className="text-[#1D7088] font-bold underline hover:underline text-[1.20rem] leading-snug"
+                  className="text-[#1d70b8] font-bold underline hover:underline text-[1.20rem] leading-snug"
                 >
                   Cost of living support
                 </a>

@@ -22,18 +22,18 @@ function App() {
         <PopularLinks />
 
         {/* Services & Featured */}
-
-        <div className="max-w-7xl mx-auto pl-[160px] pr-[-20px]">
-          <div className="md:col-span-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-40">
+          <div className="w-full">
             <ServicesAndInfo />
             <GovernmentActivity />
             <Feedback />
           </div>
         </div>
       </main>
+
       <div className="border-t-8 border-[#1d70b8] mt-0">
-        <div className="max-w-7xl mx-auto pl-[70px] pr-[-20px]">
-          <div className="md:col-span-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
+          <div className="w-full">
             <AllserviceAndInfo />
             <Footer />
           </div>

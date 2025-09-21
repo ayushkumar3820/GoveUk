@@ -4,8 +4,8 @@ const Menu = ({ isOpen }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="bg-white border-t border-gray-300 pl-[280px]">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="bg-white border-t border-gray-300">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-6">
           
           {/* Services and Information Section */}
@@ -21,13 +21,13 @@ const Menu = ({ isOpen }) => {
                 <a href="/births-deaths-marriages" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem] leading-relaxed">
                   Births, deaths, marriages and care
                 </a>
-                <a href="/business" className="block underline text-[#1d70b8] font-bold  hover:text-[#003078] hover:underline text-[1rem] leading-relaxed">
+                <a href="/business" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem] leading-relaxed">
                   Business and self-employed
                 </a>
-                <a href="/childcare" className="block underline text-[#1d70b8] font-bold  hover:text-[#003078] hover:underline text-[1rem] leading-relaxed">
+                <a href="/childcare" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem] leading-relaxed">
                   Childcare and parenting
                 </a>
-                <a href="/citizenship" className="block underline text-[#1d70b8] font-bold  hover:text-[#003078] hover:underline text-[1em] leading-relaxed">
+                <a href="/citizenship" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem] leading-relaxed">
                   Citizenship and living in the UK
                 </a>
                 <a href="/crime-justice" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem] leading-relaxed">
@@ -104,7 +104,7 @@ const Menu = ({ isOpen }) => {
               </div>
               
               <div>
-                <a href="/research" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem]  leading-relaxed">
+                <a href="/research" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem] leading-relaxed">
                   Research and statistics
                 </a>
                 <p className="text-[1rem] text-gray-600 mt-1">
@@ -113,7 +113,7 @@ const Menu = ({ isOpen }) => {
               </div>
               
               <div>
-                <a href="/policy" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem]  leading-relaxed">
+                <a href="/policy" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem] leading-relaxed">
                   Policy papers and consultations
                 </a>
                 <p className="text-[1rem] text-gray-600 mt-1">
@@ -122,7 +122,7 @@ const Menu = ({ isOpen }) => {
               </div>
               
               <div>
-                <a href="/transparency" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem]  leading-relaxed">
+                <a href="/transparency" className="block underline text-[#1d70b8] font-bold hover:text-[#003078] hover:underline text-[1rem] leading-relaxed">
                   Transparency
                 </a>
                 <p className="text-[1rem] text-gray-600 mt-1">
@@ -131,11 +131,10 @@ const Menu = ({ isOpen }) => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
-
-    
   );
 };
 
