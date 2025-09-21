@@ -134,7 +134,7 @@ const Header = () => {
                   />
                 </svg>
                 <span className="relative text-[20px]">Menu</span>
-                <span className="absolute left-0 right-0 -bottom-[16px] h-[2px] bg-white scale-x-0 group-hover:scale-x-100" />
+                <span className="absolute left-5 right-0 -bottom-[16px] h-[2px] bg-white scale-x-0 group-hover:scale-x-100" />
                 </button>
                 </div>
                 <div className="relative group">
